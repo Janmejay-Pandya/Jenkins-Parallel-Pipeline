@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Payment Gateway</h1>
+      <p id="welcomeText"></p>
+
+      <form id="paymentForm" class="card">
+        <label
+          >Name on card
+          <input id="name" type="text" placeholder="Jane Doe" required />
+        </label>
+        <label
+          >Card number
+          <input
+            id="card"
+            type="text"
+            placeholder="4242 4242 4242 4242"
+            maxlength="19"
+            required
+          />
+        </label>
+        <div class="row">
+          <label
+            >Expiry (MM/YY)
+            <input
+              id="expiry"
+              type="text"
+              maxlength="5"
+              placeholder="12/34"
+              required
+            />
+          </label>
+          <label
+            >CVC
+            <input
+              id="cvc"
+              type="text"
+              maxlength="4"
+              placeholder="123"
+              required
+            />
+          </label>
+        </div>
+        <label
+          >Amount (INR)
+          <input id="amount" type="number" min="1" value="100" required />
+        </label>
+
+        <button type="submit">Pay Now</button>
+        <p id="status" class="status"></p>
+      </form>
+
+      <button id="logoutBtn" class="logout">Logout</button>
+    </div>
+
+    <script src="payment.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+:root {
+  --bg: #f7f9fc;
+  --card: #fff;
+  --accent: #0078ff;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  width: 400px;
+}
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+input,
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.status {
+  text-align: center;
+  margin-top: 10px;
+}
+.logout {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
